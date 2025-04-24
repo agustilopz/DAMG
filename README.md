@@ -42,7 +42,7 @@ Crear una plataforma web moderna, intuitiva y funcional donde los usuarios pueda
 
 Proyecto desarrollado por:
 
-- Agusti Lopez
+- Agustí López
 - Guillermo Mir
 - Daniel Alarcon
 - Marc Bonamusa
