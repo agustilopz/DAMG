@@ -4,7 +4,7 @@
 session_start();
 
 // Conectar con la base de datos de usuarios
-$db = new SQLite3('database/damg.db');
+$db = new SQLite3('../database/damg.db');
 
 // Si ya hay usuario logado, redirigir
 if (isset($_SESSION['us_nom'])) {
