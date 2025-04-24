@@ -11,14 +11,14 @@
 
 <body>
     <div class="container mt-4">
-        <a href="index.html" class="btn btn-outline-primary mb-3">Tornar a l'inici</a>
+        <a href="../index.php" class="btn btn-outline-primary mb-3">Tornar a l'inici</a>
         <a href="gestioCategories.php" class="btn btn-outline-secondary mb-3">Tornar a la gestió de categories</a>
 
         <h2 class="text-center mb-4">🛍️ Gestió de Productes</h2>
 
         <div class="row">
             <?php
-            $db = new SQLite3('database/damg.db');
+            $db = new SQLite3('../database/damg.db');
             //$id = $_GET['id'];
             $resultats = $db->query("SELECT * FROM productes");
 

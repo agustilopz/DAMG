@@ -31,22 +31,19 @@
     <h2>Registrarse</h2>
     <form action="registro.proc.php" method="post">
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Nombre completo" required />
+        <input type="text" class="form-control" name="us_nom" placeholder="Nombre completo" required />
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Correo electrónico" required />
+        <input type="password" class="form-control" name="us_contrasenya" placeholder="Contraseña" required />
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Contraseña" required />
-      </div>
-      <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Confirmar Contraseña" required />
+        <input type="password" class="form-control" name="us_contrasenya2" placeholder="Confirmar Contraseña" required />
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-login">Registrarse</button>
       </div>
       <div class="form-text text-center mt-3">
-        ¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a>
+        ¿Ya tienes cuenta? <a href="login.php">Inicia Sesión</a>
       </div>
     </form>
   </div>
