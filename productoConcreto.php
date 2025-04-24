@@ -1,10 +1,10 @@
 <?php
-// Conectar a la base de datos SQLite
-$db = new SQLite3('damg.db');
+// Asegúrate de que la ruta del archivo sea correcta:
+$db = new SQLite3('database/damg.db');
 
 // Obtener el ID del producto desde la URL
 $id = $_GET['id'] ?? null;
-if (!$id) {
+if (!$id || !is_numeric($id)) {
     die("Producto no encontrado.");
 }
 
@@ -19,7 +19,6 @@ if (!$producto) {
     die("Producto no encontrado.");
 }
 
-// Cerrar la conexión a la base de datos
 $db->close();
 ?>
 

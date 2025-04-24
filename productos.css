@@ -4,6 +4,8 @@ body {
     background-color: #121212;
     color: #f0f0f0;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* Barra de navegación */
@@ -25,21 +27,21 @@ body {
 .productos {
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el número de columnas según el tamaño */
-    gap: 1.5rem; /* Espacio entre los productos */
+    grid-template-columns: repeat(3, 1fr); /* 👈 Esto fuerza 3 columnas */
+    gap: 1.5rem;
 }
 
 /* Estilo para las tarjetas de productos */
 .producto-card {
     background: #1e1e1e;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 350px; /* Establece una altura fija para todos los productos */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
 }
 
 /* Efecto al pasar el ratón por encima */
@@ -51,30 +53,36 @@ body {
 /* Imagen del producto */
 .producto-card img {
     width: 100%;
-    height: 200px; /* Establece una altura uniforme para las imágenes */
-    object-fit: cover; /* Asegura que las imágenes mantengan la proporción sin distorsionarse */
-    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 /* Título del producto */
 .producto-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #39ff14;
-    margin: 10px 0;
+    margin: 10px 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Descripción corta */
 .producto-card p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #d0d0d0;
     flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Precio del producto */
 .producto-card .precio {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #39ff14;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 /* Botón para ver detalles */
@@ -82,14 +90,17 @@ body {
     background-color: #39ff14;
     color: black;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 /* Efecto al pasar el ratón por encima del botón */
 .producto-card a:hover {
     background-color: #1a1a1a;
+    color: #39ff14;
+    border: 1px solid #39ff14;
 }
