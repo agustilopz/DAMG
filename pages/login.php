@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - DAMG</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="estilo.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      background: linear-gradient(135deg, #0e0e0e 0%, #1a1a1a 100%);
-      font-family: 'Orbitron', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-  </style>
-</head>
-<body>
+<?php include("../includes/head.html"); ?>
+<body class="login-page">
 
   <div class="login-container">
     <div class="logo">
@@ -32,10 +12,10 @@
     <h2>Iniciar Sesión</h2>
     <form action="login.proc.php" method="post">
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Correo electrónico" required />
+        <input type="text" class="form-control" name="us_nom" placeholder="Usuario" required />
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" placeholder="Contraseña" required />
+        <input type="password" class="form-control" name="us_contrasenya" placeholder="Contraseña" required />
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-login">Entrar</button>
