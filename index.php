@@ -1,11 +1,7 @@
   <!DOCTYPE html>
   <html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAMG</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <?php include("./includes/head.html") ?>
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
@@ -43,13 +39,5 @@
         </div>
       </div>
     </section>
-
-    <footer class="footer text-center py-4">
-      <div class="container">
-        <p class="mb-0">&copy; 2025 DAMG. Todos los derechos reservados.</p>
-      </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-  </html>
+</body>
+</html>
