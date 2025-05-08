@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="../css/nav.css" />
   <?php include("../includes/head.html"); ?>
 </head>
-<body>
+<body class="support-page">
   <?php include("../includes/nav.php"); ?>
 
   <header class="header">
@@ -262,9 +262,9 @@
               <i class="fas fa-user-cog"></i>
             </div>
           </div>
-          <h3>Laura Méndez</h3>
+          <h3>Dani Alarcon</h3>
           <p class="member-title">Especialista en Hardware</p>
-          <p class="member-cert">Certificada Apple, Dell, HP</p>
+          <p class="member-cert">Certificado Apple, Dell, HP</p>
         </div>
         
         <div class="team-member">
@@ -273,7 +273,7 @@
               <i class="fas fa-user-shield"></i>
             </div>
           </div>
-          <h3>Carlos Vega</h3>
+          <h3>Agustí López</h3>
           <p class="member-title">Experto en Seguridad</p>
           <p class="member-cert">CISSP, CompTIA Security+</p>
         </div>
@@ -284,7 +284,7 @@
               <i class="fas fa-user-graduate"></i>
             </div>
           </div>
-          <h3>Elena Torres</h3>
+          <h3>Marc Bonamusa</h3>
           <p class="member-title">Especialista en Software</p>
           <p class="member-cert">Microsoft Certified, Linux Professional</p>
         </div>
@@ -295,7 +295,7 @@
               <i class="fas fa-user-gear"></i>
             </div>
           </div>
-          <h3>Marcos Ruiz</h3>
+          <h3>Guillermo Mir</h3>
           <p class="member-title">Técnico de Redes</p>
           <p class="member-cert">Cisco CCNA, Network+</p>
         </div>

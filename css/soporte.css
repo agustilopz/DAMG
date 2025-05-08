@@ -806,3 +806,22 @@ h2::after {
         gap: 10px;
     }
 }
+
+body.support-page {
+    background-color: #161616;
+  }
+  .support-options-section h2,
+.support-plans-section h2,
+.tech-team-section h2 {
+  color: var(--light-color);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
