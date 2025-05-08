@@ -1,0 +1,130 @@
+/* Estilo global */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de los detalles del producto */
+.producto-detalle {
+    padding: 50px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sección de imágenes y detalles del producto */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Imagen del producto */
+img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título y precio del producto */
+h1 {
+    font-size: 2.5em;
+    color: #39ff14;;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Descripción del producto */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Recuadro de características */
+.detalles {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+.detalles h3 {
+    font-size: 1.8em;
+    color: #39ff14;;
+    margin-bottom: 15px;
+}
+
+.detalles ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.detalles ul li {
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.detalles ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo del botón */
+.btn-neon {
+    display: inline-block;
+    background-color:#39ff14;;
+    color: #121212;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-neon:hover {
+    background-color:#39ff14;;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #39ff14;;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+    }
+
+    .producto-detalle {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+}

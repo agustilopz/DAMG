@@ -25,7 +25,7 @@
   <div class="main">
     <h2>Mi perfil</h2>
     <div class="card-profile">
-      <form>
+    <form method="POST" action="perfil.proc.php">
         <div class="row">
           <div class="col-md-6">
             <label for="nombre">Nombre</label>
@@ -33,7 +33,7 @@
           </div>
           <div class="col-md-6">
             <label for="password">Cambiar Contraseña</label>
-            <input type="password" id="password" class="form-control" placeholder="********">
+            <input type="password" id="password" name="password" class="form-control" placeholder="********">
           </div>
         </div>
         <button type="submit" class="btn btn-save">Guardar cambios</button>
