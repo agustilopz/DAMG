@@ -11,7 +11,7 @@
       <div class="container text-center">
         <h1 class="display-3 fw-bold">Bienvenido al Futuro de la Tecnología</h1>
         <p class="lead">Explora una experiencia única y futurista en asesorías, soporte y e-commerce.</p>
-        <a href="#" class="btn btn-neon btn-lg mt-3">Descubre Más</a>
+        <a href="./pages/productos.php" class="btn btn-neon btn-lg mt-3">Descubre Más</a>
       </div>
     </header>
 

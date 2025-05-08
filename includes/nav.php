@@ -13,8 +13,8 @@
     <a href="../pages/asesoramiento.php">Asesoramiento</a>
     <a href="../pages/blog.php">Blog</a>
     <a href="../pages/soporte.php">Soporte Técnico</a>
-    <a href="#">Tienda</a>
-    <a href="#">Contacto</a>
+    <a href="../pages/productos.php">Tienda</a>
+    <a href="../pages/contacto.php">Contacto</a>
     </nav>
 
     <a class="navbar-brand d-flex align-items-center" href="../index.php">
