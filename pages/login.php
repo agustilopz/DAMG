@@ -21,7 +21,7 @@
         <button type="submit" class="btn btn-login">Entrar</button>
       </div>
       <div class="form-text text-center mt-3">
-        ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+        ¿No tienes cuenta? <a href="registro.php">Regístrate</a>
       </div>
     </form>
   </div>
