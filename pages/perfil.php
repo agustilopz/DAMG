@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="../css/perfil.css">
 </head>
 <body>
-    <?php include("../includes/nav.html") ?>
-  <!-- Sidebar -->
+    <?php include("../includes/nav.php") ?>
+    <?php
+      session_start();
+    ?>
   <div class="sidebar">
     <div class="profile-pic">
       <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -15,15 +17,11 @@
         <path fill-rule="evenodd" d="M8 9a5 5 0 0 0-5 5v.5h10V14a5 5 0 0 0-5-5z"/>
       </svg>
     </div>
-    <h4>Nombre usuario</h4>
+    <h4><?= htmlspecialchars($_SESSION['us_nom']) ?></h4>
     <a href="#" class="active">Mi perfil</a>
-    <a href="#">Ajustes</a>
-    <a href="#">Privacidad</a>
-    <a href="#">Notificaciones</a>
-    <a href="#">Cerrar sesión</a>
+    <a href="logout.proc.php">Cerrar sesión</a>
   </div>
 
-  <!-- Main content -->
   <div class="main">
     <h2>Mi perfil</h2>
     <div class="card-profile">
@@ -31,27 +29,11 @@
         <div class="row">
           <div class="col-md-6">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+            <input type="text" id="nombre" class="form-control" value="<?= htmlspecialchars($_SESSION['us_nom']) ?>" placeholder="Tu nombre">
           </div>
           <div class="col-md-6">
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" class="form-control" placeholder="Tus apellidos">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" class="form-control" placeholder="correo@ejemplo.com">
-          </div>
-          <div class="col-md-6">
-            <label for="password">Contraseña</label>
+            <label for="password">Cambiar Contraseña</label>
             <input type="password" id="password" class="form-control" placeholder="********">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <label for="about">Sobre mí</label>
-            <textarea id="about" class="form-control" rows="4" placeholder="Cuéntanos algo sobre ti..."></textarea>
           </div>
         </div>
         <button type="submit" class="btn btn-save">Guardar cambios</button>

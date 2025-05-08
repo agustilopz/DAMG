@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <?php include("./includes/nav.html") ?>
+    <?php include("./includes/nav.php") ?>
 
     <header class="hero d-flex align-items-center">
       <div class="container text-center">

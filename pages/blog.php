@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
-<?php include("../includes/nav.html"); ?>
+<?php include("../includes/nav.php"); ?>
   <!-- Artículos -->
   <section class="features py-5">
     <div class="container">
