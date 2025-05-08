@@ -32,12 +32,12 @@ $db->close();
 </head>
 <body>
 
-<!-- Barra de navegación -->
+
 <nav class="navbar">
     <a href="productos.php">Volver a la tienda</a>
 </nav>
 
-<!-- Detalles del producto -->
+
 <div class="producto-detalle container">
     <div class="row">
         <div class="col-md-6">
@@ -45,9 +45,6 @@ $db->close();
         </div>
         <div class="col-md-6">
             <h1><?php echo $producto['prod_nom']; ?></h1>
-            <h4>€<?php echo number_format($producto['prod_preu'], 2, ',', '.'); ?></h4>
-            <p><?php echo $producto['prod_descripcio']; ?></p>
-
             <div class="detalles">
                 <h3>Características del Producto:</h3>
                 <ul>
