@@ -10,11 +10,6 @@ if (!$db) {
     die("No se pudo abrir la base de datos.");
 }
 
-// Verificar que la tabla existe
-$check = $db->query("SELECT name FROM sqlite_master WHERE type='table' AND name='productes'");
-if (!$check->fetchArray()) {
-    die("La tabla 'productes' no existe.");
-}
 
 // Obtener productos
 $result = $db->query("SELECT * FROM productes");
