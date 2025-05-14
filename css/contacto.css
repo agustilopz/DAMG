@@ -1,0 +1,66 @@
+/* Hero Contacto */
+.contact-hero {
+    background: linear-gradient(rgba(18,18,18,0.6), rgba(18,18,18,0.6)),
+                url('../assets/contact-bg.jpg') no-repeat center/cover;
+    height: 40vh;
+  }
+  .contact-hero h1 {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+  .contact-hero p {
+    margin-top: 0.5rem;
+  }
+  
+  /* Formulario y tarjeta */
+  .form-card, .info-card {
+    background-color: rgba(30,30,30,0.9);
+    border: 1px solid #39ff14;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(57,255,20,0.3);
+  }
+  .form-card .form-label {
+    color: #ccc;
+  }
+  .form-card .form-control {
+    background: transparent;
+    border: 1px solid #39ff14;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .form-card .form-control::placeholder {
+    color: #bbb;
+  }
+  .form-card .btn-neon {
+    margin-top: 1rem;
+  }
+  
+  /* Información de contacto */
+  .info-card h4 {
+    font-weight: bold;
+  }
+  .info-card p {
+    color: #ddd;
+  }
+  
+  /* Redes sociales */
+  .social-icons a:hover {
+    color: #2ed700;
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+  
+  /* Padding de secciones */
+  .contact-form {
+    background-color: #121212;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .contact-hero {
+      height: 30vh;
+    }
+    .form-card, .info-card {
+      padding: 1.5rem;
+    }
+  }
+  

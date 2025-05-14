@@ -1,0 +1,148 @@
+/* Navbar */
+/* Estilos para el Nuevo Header */
+.navbar {
+    background: linear-gradient(90deg, #000000, #1a1a1a);
+    padding: 15px 0;
+    border-bottom: 1px solid #39ff14;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #39ff14;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+}
+
+/* Estilos del buscador */
+.search-form {
+    width: 40%;
+    min-width: 250px;
+}
+
+.search-input {
+    background-color: rgba(30, 30, 30, 0.8);
+    border: 1px solid #39ff14;
+    color: #f0f0f0;
+    border-radius: 20px 0 0 20px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    background-color: rgba(40, 40, 40, 0.9);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+    border-color: #39ff14;
+}
+
+.btn-search {
+    background-color: #242424;
+    border: 1px solid #39ff14;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+    background-color: #2a2a2a;
+    box-shadow: 0 0 8px rgba(57, 255, 20, 0.5);
+}
+
+/* Estilos para los iconos de navegación */
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #39ff14;
+    font-style: italic;
+    opacity: 0.7;
+}
+  
+.nav-icons a:hover {
+    background-color: rgba(57, 255, 20, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(57, 255, 20, 0.6);
+}
+
+.nav-icons svg {
+transition: all 0.3s ease;
+}
+
+.nav-icons a:hover svg {
+filter: drop-shadow(0 0 3px rgba(57, 255, 20, 0.8));
+}
+
+/* Botón del menú lateral */
+.btn-toggle-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    font-size: 1.8rem;
+    color: #39ff14;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0 0 10px #39ff14;
+  }
+  
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 220px;
+    background-color: #1a1a1a;
+    border-right: 2px solid #39ff14;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu a {
+    padding: 15px 25px;
+    color: #39ff14;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.side-menu a:hover {
+    background-color: #2a2a2a;
+}
+
+/* Mostrar el menú */
+.side-menu.active {
+    left: 0;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .search-form {
+        width: 60%;
+        margin: 0 10px;
+    }
+    
+    .nav-icons a {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .nav-icons svg {
+        width: 18px;
+        height: 18px;
+    }
+    }
